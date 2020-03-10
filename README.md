@@ -39,4 +39,4 @@ In order to run warshall.py the program matrixUtils.py must also be in the same 
  
       mpirun -n (number of threads) python3 ./warshall.py
       
-**The program warshall.py will not run successfully with 8 or more threads.**
+**The program warshall.py will not run successfully with 6 or more threads.**
