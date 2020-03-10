@@ -28,3 +28,15 @@ The program shall use mpi to do the work in parallel
 The program shall use an adjacency matrix 
 The program shall split work among multiple mpi processes 
 The program shall display a portion of the input and final matrices 
+
+## How to Run warshall.py
+
+In order to run warshall.py the program matrixUtils.py must also be in the same working directory. When running warshall.py the arguments -f <file name of input matrix>, -r <file name of expected result> can be passed on the command line. By default -f is set to 'fwTest.txt' and -r is set to 'fwTestResult.txt'. If you want to pass the input file and result file on the command line the full command would be:
+  
+     mpirun -n (number of threads) python3 ./warshall.py -f "Test.txt" -r "result.txt"
+  
+ If you do not pass any arguments then the full command to run the program is:
+ 
+      mpirun -n (number of threads) python3 ./warshall.py
+      
+**The program warshall.py will not run successfully with 8 or more threads.**
